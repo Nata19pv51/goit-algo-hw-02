@@ -45,7 +45,11 @@ def check_symbols(expression):
        return True
     return False
 
-print(check_symbols("( ){[ 1 ]( 1 + 3 )( ){ }}"))
-print(check_symbols("( 23 ( 2 - 3);"))
-print(check_symbols("( 11 }"))
-print(check_symbols("( 11 )"))
+if check_symbols("( ){[ 1 ]( 1 + 3 )( ){ }}"):
+   print("Симетрично")
+else:
+   print("Несиметрично")
+
+# print(check_symbols("( 23 ( 2 - 3);"))
+# print(check_symbols("( 11 }"))
+# print(check_symbols("( 11 )"))
